@@ -1,3 +1,27 @@
+.col-md-5{
+    position: relative;
+}
 .col-md-5 img{
     width: 100%;
+    height: 700px;
+}
+.btn{
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.list{
+    display: flex;
+    flex-direction:  column;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.btn.active{
+    background-color: orangered;
+}
+.offer{
+    color:orangered;
 }
