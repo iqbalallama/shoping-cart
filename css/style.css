@@ -16,12 +16,25 @@
     display: flex;
     flex-direction:  column;
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 25px;
+    right: 25px;
 }
 .btn.active{
     background-color: orangered;
 }
 .offer{
     color:orangered;
+}
+#inputs{
+    width: 30px;
+    text-align: center;
+}
+.btnn{
+    border: none;
+    border-radius: 5px;
+    background-color: orangered;
+    color:white;
+}
+#bttn{
+    padding: 10px 20px;
 }

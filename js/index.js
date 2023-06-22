@@ -27,3 +27,25 @@ btn[2].onclick = function(){
     }
     this.classList.add('active')
 }
+function isAdd(add){
+    const inputss = document.getElementById('inputs');
+    const inputsV = inputss.value;
+    const inputsP = parseFloat(inputsV);
+    let value;
+    if(add){
+        value = inputsP + 1;
+    }else{
+        if(inputsP <= 0){
+            value = 0;
+        }else{
+            value = inputsP - 1;
+        }
+    }
+    inputss.value = value;
+}
+document.getElementById('minus').addEventListener('click',function(){
+    isAdd(false)
+})
+document.getElementById('plus').addEventListener('click',function(){
+    isAdd(true)
+})
