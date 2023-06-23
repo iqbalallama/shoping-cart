@@ -42,10 +42,15 @@ function isAdd(add){
         }
     }
     inputss.value = value;
+    const total = value * 45 ;
+    document.getElementById('para').innerText = total;
 }
 document.getElementById('minus').addEventListener('click',function(){
     isAdd(false)
 })
 document.getElementById('plus').addEventListener('click',function(){
     isAdd(true)
+})
+document.getElementById('bttn').addEventListener('click',function(){
+    
 })
